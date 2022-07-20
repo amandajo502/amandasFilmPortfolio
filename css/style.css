@@ -61,7 +61,7 @@ h1 {
   align-self: center;
 }
 
-button {
+#heroBtn {
   border: 0;
   line-height: 1;
   padding: 15px;
@@ -72,13 +72,8 @@ button {
   align-self: center;
 }
 
-button > a {
-  color: #f7b9aa;
-  opacity: 75%;
-}
-
-button:hover {
-  background-color: #0a2328;
+#heroBtn:hover {
+  background-color: white;
 }
 
 .galleryContainer {
@@ -88,47 +83,6 @@ button:hover {
   align-items: center;
   margin: auto;
   padding: 15px;
-}
-
-#galleryItems {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 100%;
-  gap: 5px;
-}
-
-#galleryItems button {
-  line-height: 1;
-  padding: 15px;
-  font-size: 2rem;
-  text-align: center;
-  background-color: aqua;
-  border-radius: 10px;
-  align-self: center;
-}
-
-#galleryItems button:hover {
-  background-color: gold;
-  display: block;
-}
-
-#galleryItems li {
-  list-style-type: none;
-}
-
-#galleryItems a{
-  box-sizing: border-box;
-  display: block;
-  background-color: aqua;
-  color: white;
-  padding:5px;
-  text-align: center;
-  flex: 100%;
-}
-
-section .active {
-  display: block;
 }
 
 .galleryRow {
@@ -250,7 +204,7 @@ footer {
     }
 
     #navListItems a:hover{
-        background-color: white;
+        background-color: lightblue;
     
     }
 
