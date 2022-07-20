@@ -1,4 +1,4 @@
-document.getElementById("btn1"),addEventListener("click", function()
+document.getElementById("btn1").addEventListener("click", function()
 
 {
     var gallery1=document.getElementById("nature");
@@ -12,7 +12,7 @@ gallery1.style.display = "block";
     }
 })
 
-document.getElementById("btn2"),addEventListener("click", function()
+document.getElementById("btn2").addEventListener("click", function()
 
 {
     var gallery2=document.getElementById("sky");
@@ -26,7 +26,7 @@ gallery2.style.display = "block";
     }
 })
 
-document.getElementById("btn3"),addEventListener("click", function()
+document.getElementById("btn3").addEventListener("click", function()
 
 {
     var gallery3=document.getElementById("portraits");
@@ -40,7 +40,7 @@ gallery3.style.display = "block";
     }
 })
 
-document.getElementById("btn4"),addEventListener("click", function()
+document.getElementById("btn4").addEventListener("click", function()
 
 {
     var gallery4=document.getElementById("collage");
