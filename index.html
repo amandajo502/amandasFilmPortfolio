@@ -65,7 +65,6 @@
             <img src="/images/nature/8.jpg" alt="flowers" style="width:100%"/>
             <img src="/images/nature/11.jpg" alt="flowers" style="width:100%"/>
             <img src="/images/nature/14.jpg" alt="flowers" style="width:100%"/>
-            <img src="/images/nature/17.jpg" alt="flowers" style="width:100%"/>
             <img src="/images/nature/21.jpg" alt="flowers" style="width:100%"/>
             <img src="/images/nature/24.jpg" alt="flowers" style="width:100%"/>
             <img src="/images/nature/27.jpg" alt="flowers" style="width:100%"/>
@@ -183,7 +182,19 @@
       <h1>Contact Me</h1>
       <hr>
       <div class="contactContainerContent">
-      <div>
+      <div id="formContainer">
+        <form action="action_page.php">
+          <label for="name">Name</label>
+          <input type="text" id="userName" name="name" placeholder="Your name here...">
+
+          <label for="email">Email</label>
+          <input type="text" id="userEmail" name="email" placeholder="Your email here...">
+
+          <label for="message">Message</label>
+          <textarea id="userMessage" name="message" 
+          placeholder="Write a message for Amanda..." style="height: 50px;"></textarea>
+          <input type="submit" value="Submit">
+        </form>
     </div>
       <p>
         To order prints, schedule a session with me, or just chat about film, 

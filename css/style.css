@@ -212,7 +212,7 @@ p {
   align-items: center;
 }
 
-.contactContainerContent div {
+#formContainer {
   background-color: #f6e0fc;
   width: 300px;
   height: 200px;
