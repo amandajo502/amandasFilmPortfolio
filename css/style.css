@@ -1,5 +1,9 @@
-
-
+/*Palette
+(TEAL)#3F6462
+(NAVY)#0B2732
+(PINK) #F7AB99
+(BLACK)#030C0B 
+(PALE)#F6E0FC*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,7 +16,7 @@ html {
   font-family: 'Lato', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Quicksand', sans-serif;
-  background-color: white;
+  background-color: #f6e0fc;
   scroll-behavior: smooth;
 }
 
@@ -24,16 +28,15 @@ html {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-bottom: 1px solid white;
-    color: white;
-    padding:10px;
+    border-bottom: 1px solid #f6e0fc;
+    color: #f6e0fc;
+    padding:5px;
     text-align: left;
 }
 
 #hamburgerNav label{
     display: inline-block;
-    color: white;
-    background: #0a2328a3;
+    color: #f6e0fc;
     font-style: normal;
     font-size: 3.2em;
     padding: 10px;
@@ -51,29 +54,30 @@ html {
     background-image: url("/images/cover.PNG");
     background-position: center;
     background-size: cover;
-  border: solid white 5px;
+  border: solid #f6e0fc 5px;
   display: flex;
   flex-direction: column;
   align-content: space-between;
   justify-content: center;
   margin: auto;
-  gap: 100px;
+  gap: 70px;
   padding: 50px;
 }
 
 
 
 h1 {
-  color: navy;
+  color: #0B2732;
   align-self: center;
   font-size: 30px;
+  align-items: center;
 }
 
 #galleryButton {
-  border: 3px white solid;
+  border: 1px #0B2732 solid;
   text-align: center;
-  background-color: navy;
-  color: white;
+  background-color: #0B2732;
+  color: #f6e0fc;
   width: fit-content;
   padding: 10px;
   border-radius: 15px;
@@ -105,7 +109,7 @@ h1 {
 }
 
 .galleryContainer {
-  background-color: white;
+  background-color: #f6e0fc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,17 +146,17 @@ h1 {
 }
 
 input {
-  color: navy;
+  color: #0B2732;
   font-size: 20px;
   text-decoration: none;
   list-style-type: none;
   border: none;
-  border-bottom: solid navy 3px;
-  background-color: white;
+  border-bottom: solid #0B2732 3px;
+  background-color: #f6e0fc;
 }
 
 input:hover {
-  background-color: lightgray;
+  background-color: #3F6462;
 }
 
 #nature, #sky, #doubleE {
@@ -160,7 +164,7 @@ input:hover {
 }
 
 #aboutContainer {
-  border: solid white 3px;
+  border: solid #f6e0fc 3px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,12 +182,12 @@ input:hover {
 }
 
 p {
-  color: navy;
+  color: #f6e0fc;
   font-size: 20px;
   padding: 15px;
-  border: solid white 2px;
-  background-color: rgba(255, 255, 255, 0.241);
-  border-radius: 5px;
+  border: solid #f6e0fc 0px;
+  background-color: #3f646286;
+  border-radius: 15px;
   width: 100%;
   font-weight: bold;
 }
@@ -191,7 +195,7 @@ p {
 
 
 #contactContainer {
-  background-color: paleturquoise;
+  background-color: #3f646286;
   height:fit-content;
   display: flex;
   flex-direction: column;
@@ -209,15 +213,15 @@ p {
 }
 
 .contactContainerContent div {
-  background-color: white;
+  background-color: #f6e0fc;
   width: 300px;
   height: 200px;
 }
 
 footer {
-  color: #4e6e66;
+  color: #f6e0fc;
   height: 100px;
-  background-color: #f7b9aa;
+  background-color: #3F6462;
   margin: auto;
 }
 
@@ -235,8 +239,10 @@ footer {
     }
 
     h1 {
-      color: white;
+      color: #0B2732;
       font-size: 40px;
+      padding: 50px;
+      
     }
 
     #hamburgerNav {
@@ -255,7 +261,8 @@ footer {
     }
 
     #navListItems a:hover{
-        color: lightblue;
+        color: #3f646286;
+        border-color: #3f646286;
     
     }
 
@@ -293,7 +300,7 @@ footer {
   background-attachment: fixed;
         width: 80%;
         height: fit-content;
-        padding: 200px;
+        padding: 50px;
     }
 
     .contactContainerContent{
@@ -315,7 +322,7 @@ footer {
     }
 
     p{
-      color: white;
+      color: #f6e0fc;
     }
 
 }
@@ -331,7 +338,7 @@ footer {
 
     .galleryContainer {
         width: 80%;
-        background-color: white;
+        background-color: #f6e0fc;
     }
 
     #galleryItems{
@@ -347,7 +354,7 @@ footer {
 
     #aboutContainer{
       width: 80%;
-      height: 700px;
+      height: fit-content;
       align-items: center;
       justify-content: center;
   }
