@@ -1,3 +1,5 @@
+
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,10 +8,14 @@
 body,
 html {
   margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Cookie', cursive;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   background-color: white;
   scroll-behavior: smooth;
 }
+
 
 #navListItems li{
     list-style-type: none;
@@ -49,6 +55,7 @@ html {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+  justify-content: center;
   margin: auto;
   gap: 100px;
   padding: 50px;
@@ -59,9 +66,26 @@ html {
 h1 {
   color: navy;
   align-self: center;
+  font-size: 30px;
 }
 
-#heroBtn {
+#galleryButton {
+  border: 3px white solid;
+  text-align: center;
+  background-color: navy;
+  color: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 15px;
+  align-self: center;
+  opacity: 75%;
+}
+
+#galleryButton:hover {
+  opacity: 100%;;
+}
+
+/*#heroBtn {
   border: 0;
   line-height: 1;
   padding: 15px;
@@ -74,6 +98,10 @@ h1 {
 
 #heroBtn:hover {
   background-color: white;
+}*/
+
+#main-gallery {
+  display: none;
 }
 
 .galleryContainer {
@@ -109,17 +137,25 @@ h1 {
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  list-style-type: none;
+
 }
 
 input {
-  color: black;
+  color: navy;
+  font-size: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  border-bottom: solid navy 3px;
+  background-color: white;
 }
 
 input:hover {
   background-color: lightgray;
 }
 
-#nature, #sky, #portraits, #collage {
+#nature, #sky, #doubleE {
   display: none;
 }
 
@@ -128,7 +164,7 @@ input:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
   margin: auto;
 }
 
@@ -142,27 +178,25 @@ input:hover {
 }
 
 p {
-  background-color: white;
+  color: navy;
   font-size: 20px;
   padding: 15px;
+  border: solid white 2px;
+  background-color: rgba(255, 255, 255, 0.241);
   border-radius: 5px;
   width: 100%;
+  font-weight: bold;
 }
 
 
 
 #contactContainer {
-  background-image: url("/images/contactBG.jpg");
-  background-position: left bottom;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 400px;
+  background-color: paleturquoise;
+  height:fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
   background-size: 100%;
   margin: auto;
 }
@@ -202,6 +236,7 @@ footer {
 
     h1 {
       color: white;
+      font-size: 40px;
     }
 
     #hamburgerNav {
@@ -216,10 +251,11 @@ footer {
 
     #navListItems a{
         text-decoration: none;
+        font-weight: bold;
     }
 
     #navListItems a:hover{
-        background-color: lightblue;
+        color: lightblue;
     
     }
 
@@ -227,18 +263,42 @@ footer {
         display: none;
     }
 
+    #main-gallery {
+      display: none;
+    }
     .galleryContainer{
+      display: none;
         width: 80%;
     }
 
+    #aboutContainer{
+      width: 80%;
+      height: fit-content;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .aboutContainerContent{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+
+  }
+
     #contactContainer{
+      background-image: url("/images/contactBG.jpg");
+  background-position: left bottom;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
         width: 80%;
-        height: 700px;
+        height: fit-content;
+        padding: 200px;
     }
 
     .contactContainerContent{
-      flex-direction: row;
-      gap: 200px;
+      flex-direction: column;
+      width: 80%;
     }
 
     footer{
@@ -255,7 +315,7 @@ footer {
     }
 
     p{
-      width: 60%;
+      color: white;
     }
 
 }
@@ -263,6 +323,10 @@ footer {
 @media (min-width: 1200px){
     .heroContent{
         width: 80%;
+    }
+
+    #main-gallery {
+      display: none;
     }
 
     .galleryContainer {
@@ -299,6 +363,11 @@ footer {
         width: 80%;
     }
 
+    .contactContainerContent{
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
     footer{
         width: 80%;
     }
@@ -313,7 +382,7 @@ footer {
     }
 
     p{
-      width: 25%;
+      width: 50%;
     }
 
   }

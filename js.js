@@ -1,7 +1,7 @@
 var gallery1=document.getElementById("nature");
 var gallery2=document.getElementById("sky");
-var gallery3=document.getElementById("collage");
-var gallery4=document.getElementById("portraits")
+var gallery3=document.getElementById("doubleE");
+
 document.getElementById("btn1").addEventListener("click", function()
 
 {
@@ -51,18 +51,17 @@ gallery4.style.display = "none";
     }
 })
 
-document.getElementById("btn4").addEventListener("click", function()
+const button = document.getElementById('galleryButton');
+const gallery = document.getElementById('main-gallery');
 
-{
-    if (gallery4.style.display=="none")
-    {
-gallery4.style.display = "block";
-gallery1.style.display = "none";
-gallery2.style.display = "none";
-gallery3.style.display = "none";
+button.addEventListener('click', function() {
+    
+    if (gallery.style.display == "none") {
+        gallery.style.display = "block";
+        button.textContent = 'Hide Gallery';
     }
-    else
-    {
-        gallery4.style.display="none";
+    else {
+        gallery.style.display = "none";
+        button.textContent = 'Browse Gallery';
     }
-})
+});
