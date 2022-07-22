@@ -31,14 +31,14 @@
       </header>
 
       <h1>Amanda's Film Collection</h1>
-      <a id="galleryButton" class="btn btn-default">Browse Gallery</a>
+      <button id="galleryButton" onclick="mainToggle()">Browse Gallery</button>
     </div>
 
     <div id= "main-gallery" class="galleryContainer">
       <div class="inputContainer">
-        <input type="button" value="Nature" id="btn1">
-        <input type="button" value="Sky" id="btn2">
-        <input type="button" value="Double Exposures" id="btn3">
+        <button onclick="natureToggle()">Nature</button>
+        <button onclick="skyToggle()">Sky</button>
+        <button onclick="doubleToggle()">Double Exposures</button>
       </div>
 
       <div id="nature">
@@ -206,6 +206,6 @@
     <footer>
       <h1>This is a footer</h1>
     </footer>
-    <script src="/js.js"></script>
+    <script src="/javaScript.js"></script>
   </body>
 </html>

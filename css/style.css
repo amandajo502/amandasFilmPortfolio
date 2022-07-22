@@ -4,6 +4,7 @@
 (PINK) #F7AB99
 (BLACK)#030C0B 
 (PALE)#F6E0FC*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 
-
+/*-------------------------------Nav Bar - Hamburger Menu--------------------*/
 #navListItems li{
     list-style-type: none;
 }
@@ -50,6 +51,7 @@ html {
     display: block;
 }
 
+/*--------------------------------------Main Content---------------------*/
 .heroContent {
     background-image: url("/images/cover.PNG");
     background-position: center;
@@ -89,24 +91,11 @@ h1 {
   opacity: 100%;;
 }
 
-/*#heroBtn {
-  border: 0;
-  line-height: 1;
-  padding: 15px;
-  font-size: 2rem;
-  text-align: center;
-  background-color: #0a2328a3;
-  border-radius: 10px;
-  align-self: center;
-}
+/*------------------------------Galllery---------------------------------*/
 
-#heroBtn:hover {
-  background-color: white;
-}*/
-
-#main-gallery {
+/*#main-gallery {
   display: none;
-}
+}*/
 
 .galleryContainer {
   background-color: #f6e0fc;
@@ -274,7 +263,6 @@ footer {
       display: none;
     }
     .galleryContainer{
-      display: none;
         width: 80%;
     }
 
