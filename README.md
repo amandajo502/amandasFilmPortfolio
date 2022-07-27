@@ -1,9 +1,9 @@
 # Amanda's Film Collection
 
-##This is a portfolio to showcase Amanda's film photography.
+## This is a portfolio to showcase Amanda's film photography.
 Includes different categories to browse, an about me section, and a contact me section.
 
-##Project Features:
+## Project Features:
 -Navigation menu that opens and closes by clicking a 'hamburger' icon.
 -'Hamburger' icon changes to horizontal navigation menu when in tablet and desktop view.
 -Category buttons are arranged vertically in mobile view and horizontally in tablet and desktop views using flexbox.
