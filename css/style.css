@@ -204,12 +204,13 @@ p {
 #formContainer {
   background-color: #f6e0fc;
   width: 300px;
-  height: 200px;
+  height: fit-content;
+  padding: 5px;
 }
 
 footer {
   color: #f6e0fc;
-  height: 100px;
+  height: fit-content;
   background-color: #3F6462;
   margin: auto;
 }
