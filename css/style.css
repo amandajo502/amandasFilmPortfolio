@@ -62,8 +62,8 @@ html {
   align-content: space-between;
   justify-content: center;
   margin: auto;
-  gap: 70px;
-  padding: 50px;
+  gap: 50px;
+  padding-bottom: 80px;
 }
 
 
@@ -93,9 +93,9 @@ h1 {
 
 /*------------------------------Galllery---------------------------------*/
 
-/*#main-gallery {
+#main-gallery {
   display: none;
-}*/
+}
 
 .galleryContainer {
   background-color: #f6e0fc;
@@ -134,20 +134,23 @@ h1 {
 
 }
 
-input {
-  color: #0B2732;
+.inputContainer button {
+  color: #3F6462;
   font-size: 20px;
   text-decoration: none;
   list-style-type: none;
-  border: none;
-  border-bottom: solid #0B2732 3px;
+  border:none;
+  border-bottom: solid #3F6462 3px;
   background-color: #f6e0fc;
+  padding: 5px;
 }
 
-input:hover {
-  background-color: #3F6462;
+.inputContainer button:hover {
+  color: #030C0B;
+  border-bottom: solid #030C0B 3px;
+  background-color: #F7AB99;
 }
-
+*/
 #nature, #sky, #doubleE {
   display: none;
 }
@@ -229,7 +232,7 @@ footer {
     }
 
     h1 {
-      color: #0B2732;
+      color: #f6e0fc;
       font-size: 40px;
       padding: 50px;
       
