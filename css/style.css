@@ -53,7 +53,7 @@ html {
 
 /*--------------------------------------Main Content---------------------*/
 .heroContent {
-    background-image: url("/images/cover.PNG");
+    background-image: url(../images/cover.png);
     background-position: center;
     background-size: cover;
   border: solid #f6e0fc 5px;
@@ -220,7 +220,7 @@ footer {
 
 @media (min-width: 800px){
     body{
-        background-image: url("/images/cover.PNG");
+        background-image: url("../images/cover.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -285,7 +285,7 @@ footer {
   }
 
     #contactContainer{
-      background-image: url("/images/contactBG.jpg");
+      background-image: url("../images/contactBG.jpg");
   background-position: left bottom;
   background-size:cover;
   background-repeat: no-repeat;
