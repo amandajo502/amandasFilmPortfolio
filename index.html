@@ -2,20 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Amanda's Film Portfolio!</title>
+    <title>Amanda's Film Portfolio</title>
     <meta name="author" content="Amanda Cox" />
-    <meta
-      name="description"
-      content="Collection of film photography by Amanda"
-    />
+    <meta name="description" content="Collection of film photography by Amanda"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="./css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital@0;1&family=Poppins:wght@100;300;500;900&family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Lato:ital@0;1&family=Poppins:wght@100;300;500;900&family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
   </head>
 
   <body>
+<!--Main Container-Nav Menu, Title, Show/Hide Gallery Button-->
     <div class="heroContent">
       <header>
         <nav id="hamburgerNav">
@@ -31,9 +29,13 @@
       </header>
 
       <h1>Amanda's Film Collection</h1>
+
       <button id="galleryButton" onclick="mainToggle()">Browse Gallery</button>
     </div>
 
+<!--Gallery Section--Categories: Nature, Sky, Double Exposures-->
+
+  <!--Gallery Categories Buttons-->
     <div id= "main-gallery" class="galleryContainer">
       <div class="inputContainer">
         <button onclick="natureToggle()">Nature</button>
@@ -41,6 +43,7 @@
         <button onclick="doubleToggle()">Double Exposures</button>
       </div>
 
+    <!--Nature Gallery-->
       <div id="nature">
         <div class="galleryRow">
           <div class="galleryColumn">
@@ -91,7 +94,7 @@
         </div>
       </div>
 
-      
+    <!--Sky Gallery-->
       <div id="sky">
         <div class="galleryRow">
           <div class="galleryColumn">
@@ -123,7 +126,7 @@
         </div>
       </div>
 
-      
+    <!--Double Exposure Gallery-->
       <div id="doubleE">
         <div class="galleryRow">
           <div class="galleryColumn">
@@ -154,6 +157,7 @@
       </div>
     </div>
 
+<!--About Me Section-->
     <section id="aboutContainer">
       <h1>About Me</h1>
       <div class="aboutContainerContent">
@@ -177,8 +181,8 @@
       </div>
     </section>
 
+<!--Contact Me Section-->
     <section id="contactContainer">
-     
       <h1>Contact Me</h1>
       <hr>
       <div class="contactContainerContent">
@@ -203,8 +207,18 @@
     </div>
       </section>
 
+<!--Footer-->
     <footer>
-      <h1>This is a footer</h1>
+      <div class="footerContainer">
+      <p>Copywright © 2022 by Amanda Jo Cox</p>
+      <p>amandacoximages@gmail.com</p>
+      <a target="_blank" href="https://www.instagram.com/trail__snacks">
+        <img src="./images/instagramLogo.png" width="50px" height="50px">
+      </a>
+      <a target="_blank" href="https://github.com/amandajo502">
+        <img src="./images/githubLogo.png" width="50px" height="50px">
+      </a>
+    </div>
     </footer>
     <script src="javaScript.js"></script>
   </body>

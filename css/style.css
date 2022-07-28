@@ -13,7 +13,7 @@
 body,
 html {
   margin: auto;
-  font-family: 'Cookie', cursive;
+  font-family: 'Cookie';
   font-family: 'Lato', sans-serif;
   font-family: 'Poppins', sans-serif;
   font-family: 'Quicksand', sans-serif;
@@ -63,10 +63,8 @@ html {
   justify-content: center;
   margin: auto;
   gap: 50px;
-  padding-bottom: 80px;
+  padding: 60px;
 }
-
-
 
 h1 {
   color: #0B2732;
@@ -75,6 +73,7 @@ h1 {
   align-items: center;
 }
 
+/*Main Gallery Show/Hide Button Style*/
 #galleryButton {
   border: 1px #0B2732 solid;
   text-align: center;
@@ -92,37 +91,12 @@ h1 {
 }
 
 /*------------------------------Galllery---------------------------------*/
-
+/*Hidden at first*/
 #main-gallery {
   display: none;
 }
 
-.galleryContainer {
-  background-color: #f6e0fc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  padding: 15px;
-}
-
-.galleryRow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.galleryColumn {
-  flex: 100%;
-  max-width: 100%;
-  padding: 0 4px;
-}
-
-.galleryColumn img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
+/*categories buttons style*/
 .inputContainer{
   width: 100%;
   opacity: 50%;
@@ -150,11 +124,41 @@ h1 {
   border-bottom: solid #030C0B 3px;
   background-color: #F7AB99;
 }
-*/
+
+/*Hidden gallery sections*/
+
 #nature, #sky, #doubleE {
   display: none;
 }
 
+/*Positioning images in galleries*/
+.galleryContainer {
+  background-color: #f6e0fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 15px;
+}
+
+.galleryRow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.galleryColumn {
+  flex: 100%;
+  max-width: 100%;
+  padding: 0 4px;
+}
+
+.galleryColumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/*------------------------------About Me---------------------------------*/
 #aboutContainer {
   border: solid #f6e0fc 3px;
   display: flex;
@@ -184,8 +188,7 @@ p {
   font-weight: bold;
 }
 
-
-
+/*------------------------------Contact Me---------------------------------*/
 #contactContainer {
   background-color: #3f646286;
   height:fit-content;
@@ -211,14 +214,24 @@ p {
   padding: 5px;
 }
 
+/*------------------------------Footer---------------------------------*/
 footer {
   color: #f6e0fc;
   height: fit-content;
   background-color: #3F6462;
   margin: auto;
 }
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;  
+}
 
+/*------------------------------Medium Width Screens---------------------------------*/
 @media (min-width: 800px){
+
+  /*background appears*/
     body{
         background-image: url("../images/cover.png");
         background-size: cover;
@@ -235,9 +248,9 @@ footer {
       color: #f6e0fc;
       font-size: 40px;
       padding: 50px;
-      
     }
 
+/*Hide Hamburger and show vertical nav menu*/
     #hamburgerNav {
         width:100%;
         background: none;
@@ -281,7 +294,6 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
-
   }
 
     #contactContainer{
@@ -317,8 +329,13 @@ footer {
       color: #f6e0fc;
     }
 
-}
+    .footerContainer{
+      display: flex;
+      flex-direction: row;
+    }
+  }
 
+/*------------------------------Larger Width Screens---------------------------------*/
 @media (min-width: 1200px){
     .heroContent{
         width: 80%;
@@ -381,7 +398,6 @@ footer {
     }
 
     p{
-      width: 50%;
+      width: 40%;
     }
-
   }
